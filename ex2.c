@@ -256,6 +256,7 @@ int main(void) {
             break;
             case 7:
                 printf("Thank you for your journey through Numeria!");
+                break;
             default:
                 printf("This option is not available, please try again.");
         }
