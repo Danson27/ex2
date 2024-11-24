@@ -1,3 +1,6 @@
+//
+// Created by danso on 24/11/2024.
+//
 /******************
 Name: Dan Sonnenblick
 ID: 345287882
@@ -41,7 +44,7 @@ int main(void) {
                }
            }
            printf ("\n");
-           for (int i = 0; i <= faceSize+1; i++) {
+           for (int i = 0; i <= faceSize; i++) {
                if (i == (faceSize/2 + 1)) {
                    // Prints the nose in the middle of the face
                    printf ("%c", nose);
@@ -89,7 +92,7 @@ int main(void) {
    // Single-digit numbers are automatically harmonious
    if (num < 10) {
        printf("This number is balanced and brings harmony!\n");
-       return 0;
+       break;
    }
    // Count the digits in the input
    int temp = num;
