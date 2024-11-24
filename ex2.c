@@ -28,7 +28,7 @@ int main(void) {
             printf ("Enter face size: \n");
             scanf (" %d", &faceSize);
             while (faceSize%2 == 0 || faceSize <= 0) {
-                printf ("The face's size must be an odd and positive number, please try again \n");
+                printf ("The face's size must be an odd and positive number, please try again: \n");
                 scanf("%d", &faceSize);
             }
             // Draw the happy face using the input symbols
@@ -58,7 +58,7 @@ int main(void) {
                 }
                 if (i == faceSize+1) {
                     // Right side of the mouth
-                    printf ("/");
+                    printf ("/\n");
                 }
                 else {
                     printf ("%c", mouth);
@@ -72,7 +72,7 @@ int main(void) {
             int sum1 = 0;
             int sum2 = 0;
             int mid = 0;
-            printf("Enter a number: ");
+            printf("Enter a number: \n");
             scanf("%d", &num);
             while (num < 0) {
                 printf("Only positive number is allowed, please try again: \n");
@@ -107,16 +107,16 @@ int main(void) {
                 temp2 = temp2 / 10;
             }
             if (sum1 == sum2) {
-                printf ("This number is balanced and brings harmony!");
+                printf ("This number is balanced and brings harmony! \n");
             } else {
-                printf("This number isn't balanced and destroys harmony.");
+                printf("This number isn't balanced and destroys harmony! \n");
             }
             break;
             case 3:
-                // Case 3: determine whether the sum of the proper divisors (od an integer) is greater than the number itself
+                // Case 3: determine whether the sum of the proper divisors (of an integer) is greater than the number itself
                 int generous;
             int sum5 = 0;
-            printf("Enter a number: ");
+            printf("Enter a number: \n");
             scanf("%d", &generous);
             while (generous <= 0) {
                 printf ("Only positive number is allowed, please try again: \n");
@@ -138,14 +138,14 @@ int main(void) {
                 // Case 4: determine wether a number is a prime.
                 int circleJoy;
             int primeNum = 1;
-            printf("Enter a number: ");
+            printf("Enter a number: \n");
             scanf("%d", &circleJoy);
             while (circleJoy <= 0) {
                 printf("Only positive number is allowed, please try again: \n");
                 scanf("%d", &circleJoy);
             }if (circleJoy == 1)
             {
-                printf("The circle remains incomplete.");
+                printf("The circle remains incomplete.\n");
                 return 0;
             }
             // Checks if the number is prime
@@ -187,7 +187,7 @@ int main(void) {
                 // case 5: Happy numbers: Print all the happy numbers between 1 to the given number.
                     // Happy number is a number which eventually reaches 1 when replaced by the sum of the square of each digit
                 int input;
-            printf("Enter a number: ");
+            printf("Enter a number: \n");
             scanf("%d", &input);
             while (input < 0) {
                 printf("Only positive number is allowed, please try again: \n");
@@ -225,11 +225,11 @@ int main(void) {
             int maxNum;
             printf("Enter a smile and cheer number: ");
             while (1) {
-                int check = scanf("smile: %d, cheer: %d", &cheer, &smile);
+                int check = scanf("smile: %d, cheer: %d", &smile, &cheer);
                 if (check == 2) {
                     break;
                 }
-                printf ("Only 2 different positive numbers in the given format are allowed for the festival, please try again: ");
+                printf ("Only 2 different positive numbers in the given format are allowed for the festival, please try again: \n");
                 // Clear the invalid input
                 scanf("%*[^\n]");
                 // Clear the newline
@@ -238,7 +238,7 @@ int main(void) {
             printf("Enter maximum number for the festival: ");
             scanf("%d", &maxNum);
             while (maxNum <= 0) {
-                printf("Only positive maximum number is allowed, please try again: ");
+                printf("Only positive maximum number is allowed, please try again: \n");
                 scanf("%*[^\n]");
                 scanf("%*c");
                 scanf("%d", &maxNum);
