@@ -9,7 +9,7 @@ Assignment: ex2
 int main(void) {
    int selection;
    do {
-       printf("Choose an option:\n");
+       printf("Choose an option: \n");
        printf("    1. Happy Face\n");
        printf("    2. Balanced Number\n");
        printf("    3. Generous Number\n");
@@ -51,7 +51,7 @@ int main(void) {
                }
            }
            printf ("\n");
-           for (int i = 0; i <= faceSize+1; i++) {
+           for (int i = 0; i <= faceSize; i++) {
                if (i == 0) {
                    // Left side of the mouth
                    printf ("\\");
@@ -80,7 +80,7 @@ int main(void) {
 
 
    // Ensure the number is positive
-   while (num < 0) {
+   while (num <= 0) {
        printf("Only positive numbers are allowed, please try again: \n");
        scanf("%d", &num);
    }
