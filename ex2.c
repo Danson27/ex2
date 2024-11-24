@@ -84,7 +84,7 @@ int main(void) {
 
    // Ensure the number is positive
    while (num <= 0) {
-       printf("Only positive numbers are allowed, please try again: \n");
+       printf("Only positive number is allowed, please try again \n");
        scanf("%d", &num);
    }
 
