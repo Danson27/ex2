@@ -56,7 +56,7 @@ int main(void) {
                     // Left side of the mouth
                     printf ("\\");
                 }
-                if (i == faceSize+1) {
+                if (i == faceSize) {
                     // Right side of the mouth
                     printf ("/\n");
                 }
