@@ -85,6 +85,9 @@ int main(void) {
                 digitCount++;
                 temp = temp / 10;
             }
+                if (digitCount <10){
+                    printf ("This number is balanced and brings harmony!");
+                }
             mid = digitCount / 2;
             if (digitCount % 2 == 1) {
                 // If the number of digits is odd, adjust the middle index
@@ -223,7 +226,7 @@ int main(void) {
                 // and replace with "Festival!" every number that divided by both of them
                 int cheer, smile;
             int maxNum;
-            printf("Enter a smile and cheer number: ");
+            printf("Enter a smile and cheer number: \n");
             while (1) {
                 int check = scanf("smile: %d, cheer: %d", &smile, &cheer);
                 if (check == 2) {
@@ -235,7 +238,7 @@ int main(void) {
                 // Clear the newline
                 scanf("%*c");
             }
-            printf("Enter maximum number for the festival: ");
+            printf("Enter maximum number for the festival: \n");
             scanf("%d", &maxNum);
             while (maxNum <= 0) {
                 printf("Only positive maximum number is allowed, please try again: \n");
