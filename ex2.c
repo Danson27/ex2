@@ -86,7 +86,7 @@ int main(void) {
                 temp = temp / 10;
             }
                 if (digitCount <10){
-                    printf ("This number is balanced and brings harmony!\n");
+                    printf ("This number is balanced and brings harmony! \n");
                 }
             mid = digitCount / 2;
             if (digitCount % 2 == 1) {
